@@ -1,8 +1,5 @@
-# userAuthenticationProject_01
+# djangoProject_UserAuth
 
-<h1>Tutorial by Dave Gray</h1>
+Toutorial: https://www.youtube.com/watch?v=Rp5vd34d-z4&list=PL0Zuz27SZ-6NamGNr7dEqzNFEcZ_FAUVX&index=13
 
-<p>https://www.youtube.com/watch?v=Rp5vd34d-z4</p>
-<br>
-This tutorial works very well so far<br>
-I've done only the the start web pages (Home - About - Posts)
+Day Three: Created slugs and works fine. Next step is to add images.

@@ -1,1 +1,1 @@
-console.log('This is a message from your About page Lazaros.')
+console.log('THIS IS JS FROM YOUR ABOYT JS FILE')

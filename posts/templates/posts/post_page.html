@@ -1,0 +1,32 @@
+{% extends 'layout.html' %} 
+
+{% block title %} 
+    {{ post.title }} 
+{% endblock %} 
+
+{% block content %}<br>
+<div class="content-header">
+    <h1>{{ post.title }}</h1>
+    <p>Here you are going to post your Post List</p>
+    <br />
+</div>
+
+<section class="section-header">
+
+    <img class="banner" src="{{ post.banner.url }}" alt="{{ post.title }}" />
+    <h1>{{ post.title }}</h1>
+    <p class="p-date">{{ post.date }}</p>
+    <p>{{ post.body }}</p>
+
+</section>
+
+<footer class="p-2 m-0 border-0 bd-example m-0 border-0 bd-example-flex">
+    <hr><br>
+
+        <div class="d-flex p-2">
+            <p class="footer">
+            Check out our <a href="/">Home</a> page and <a href="/about">About</a> pages
+            Lazaros
+            </p>
+            {% endblock %}
+        </div>

@@ -4,16 +4,42 @@
    Posts List
 {% endblock %}
 
-{% block content %}
-    
-<h1>Posts List page</h1>
-    <span>Here is the page to post all your Posts list data.</span>
-    <div class="container">
-      <h3>Posts list</h3>
-      <span>Your posts list</span>
-      <p>Check out my <a href="/">Home</a> page</p>
-      <p>Check out my <a href="/about/">About</a> page</p>
-    </div>
-    
+{% block content %}<br>
+<div class="content-header">
+
+    <h1>Posts list page</h1>
+    <p>Here you are going to post your Post List</p>
+    <br /><hr>
+
+</div>
+    <section class="section-header">
+        <br><h1>Your Posts Here</h1><br><hr>
+
+        {% for post in posts %}
+        <article><br><br>
+            <h1>
+                <a class="a-header" href="{%  url 'posts:page' slug=post.slug %}">
+                    {{ post.title }}
+                </a>
+            </h1>
+            <p class="p-date">{{ post.date }}</p><br>
+            <p>{{ post.body }}</p>
+            
+        </article>
+        {% endfor %}
+        <br><br>
+    </section>
+
+    <footer class="p-2 m-0 border-0 bd-example m-0 border-0 bd-example-flex">
+                <hr><br>
+            <div class="d-flex p-2">
+                <p class="footer">
+                         Check out our 
+                    <a href="/">Home</a> page and <a href="/about">About</a> pages Lazaros
+                </p>
+            </div>
+            
+    </footer>
+
 {% endblock %}
 
